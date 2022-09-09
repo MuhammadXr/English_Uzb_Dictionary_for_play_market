@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splash">
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="uz.gita.english_uzbdictionary_for_play_market.ui.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splash_to_main"
+            app:destination="@id/menu"
+            app:popUpTo="@id/splash"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorites"
+        android:name="uz.gita.english_uzbdictionary_for_play_market.ui.FavoritesEng"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/mainEng"
+        android:name="uz.gita.english_uzbdictionary_for_play_market.ui.MainEng"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_main_to_favorites"
+            app:destination="@id/favorites" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu"
+        android:name="uz.gita.english_uzbdictionary_for_play_market.ui.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_mainUzb"
+            app:destination="@id/mainUzb" />
+        <action
+            android:id="@+id/action_menu_to_mainEng"
+            app:destination="@id/mainEng" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainUzb"
+        android:name="uz.gita.english_uzbdictionary_for_play_market.ui.MainUzb"
+        android:label="MainUzb" >
+        <action
+            android:id="@+id/action_mainUzb_to_favoritesUzb"
+            app:destination="@id/favoritesUzb" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesUzb"
+        android:name="uz.gita.english_uzbdictionary_for_play_market.ui.FavoritesUzb"
+        android:label="FavoritesUzb" />
+</navigation>

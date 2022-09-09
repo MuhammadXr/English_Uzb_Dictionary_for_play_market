@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Menu">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:src="@drawable/splash" />
+
+    <TextView
+        android:id="@+id/btn_toEng_menu"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/select_text_bg"
+        android:padding="10dp"
+        android:paddingHorizontal="16dp"
+        android:text="ENGLISH - UZBEK DICTIONARY"
+        android:textColor="#F4511E"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btn_toUzb_menu"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_toEng_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/select_text_bg"
+        android:padding="10dp"
+        android:paddingHorizontal="16dp"
+        android:text="UZBEK - ENGLISH DICTIONARY"
+        android:textColor="#F4511E"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#F4511E"
+        android:textSize="16sp"
+        android:text="by Ro'zi Muhammad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        />
+
+
+</RelativeLayout>

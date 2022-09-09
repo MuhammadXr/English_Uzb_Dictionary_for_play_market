@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EnglishUzbDictionary_for_play_market" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#EA653B</item>
+        <item name="colorPrimaryVariant">#F36A3F</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#EA6B43</item>
+        <item name="colorSecondaryVariant">#F4511E</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#F4511E</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

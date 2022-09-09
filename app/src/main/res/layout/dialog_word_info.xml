@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <View
+        android:id="@+id/top_v"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F4511E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_v"
+        tools:text="book" />
+
+    <TextView
+        android:id="@+id/txtTranscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="24sp"
+        android:textColor="#039BE5"
+        app:layout_constraintStart_toStartOf="@id/txtWord"
+        app:layout_constraintTop_toBottomOf="@id/txtWord"
+        tools:text="/æl.ə/" />
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="24sp"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@id/txtWord"
+        app:layout_constraintStart_toEndOf="@id/txtWord"
+        app:layout_constraintTop_toTopOf="@id/txtWord"
+        tools:text="Noun" />
+
+    <TextView
+        android:id="@+id/txtCountable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="#8BC34A"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/txtWord"
+        app:layout_constraintStart_toEndOf="@id/txtType"
+        app:layout_constraintTop_toTopOf="@id/txtWord"
+        tools:text="[C]" />
+
+
+    <TextView
+        android:id="@+id/txtTranslation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txtWord"
+        app:layout_constraintTop_toBottomOf="@id/txtTranscription"
+        tools:text="kitob" />
+
+    <ImageButton
+        android:id="@+id/btnStar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="16dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_v"
+        app:tint="#FB8C00"
+        tools:src="@drawable/ic_baseline_star_border_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
