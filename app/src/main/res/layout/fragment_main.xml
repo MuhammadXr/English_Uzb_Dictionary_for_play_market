@@ -26,20 +26,9 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toEndOf="@id/btn_back_menu">
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
 
-                >
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    />
-            </com.google.android.material.textfield.TextInputLayout>
-            <SearchView
-                android:visibility="gone"
+            <androidx.appcompat.widget.SearchView
                 android:id="@+id/search_view"
-                app:iconifiedByDefault="false"
                 app:queryHint="Search-Qidiruv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
